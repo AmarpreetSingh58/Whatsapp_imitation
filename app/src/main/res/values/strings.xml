@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Whatsapp_imitation</string>
+    <string name="status">Your Status</string>
+    <string name="Recent_updates">Recent Updates</string>
+    <string name="recived">Recieved</string>
+    <string name="missed">Missed</string>
+    <string name="dialled">Dialled</string>
+</resources>
