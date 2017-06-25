@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static int count =4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,12 +39,11 @@ public class MainActivity extends AppCompatActivity {
                 case 1:fragment =new Chat_fragment();
                     break;
 
-                // These two fragments arre giving null pointer exception
-                /*case 2:fragment =new Status_fragment();
+                case 2:fragment =new Status_fragment();
                     break;
 
                 case 3:fragment =new Call_fragment();
-                    break;*/
+                    break;
                 default: fragment = new Chat_fragment();
 
             }
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 3;
+            return count;
         }
     }
 }

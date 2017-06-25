@@ -29,7 +29,7 @@ public class Status_adapter extends RecyclerView.Adapter<Status_adapter.ViewHold
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         LayoutInflater sl = LayoutInflater.from(sc);
-        View sv =sl.inflate(R.layout.fragment_status,parent,false);
+        View sv =sl.inflate(R.layout.status_single_item,parent,false);
 
         ViewHolder svH = new ViewHolder(sv);
 

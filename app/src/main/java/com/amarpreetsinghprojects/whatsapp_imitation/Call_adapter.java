@@ -29,7 +29,7 @@ public class Call_adapter extends RecyclerView.Adapter<Call_adapter.ViewHolder> 
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater cl = LayoutInflater.from(cC);
 
-        View cv = cl.inflate(R.layout.fragment_call,parent,false);
+        View cv = cl.inflate(R.layout.call_single_item,parent,false);
 
         ViewHolder cvH = new ViewHolder(cv);
 
@@ -66,7 +66,7 @@ public class Call_adapter extends RecyclerView.Adapter<Call_adapter.ViewHolder> 
 
         TextView callname,calltime;
         ImageView callimg;
-        ImageButton calltype;
+        ImageView calltype;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -74,7 +74,7 @@ public class Call_adapter extends RecyclerView.Adapter<Call_adapter.ViewHolder> 
             callname = (TextView)itemView.findViewById(R.id.callname);
             calltime = (TextView)itemView.findViewById(R.id.calltime);
             callimg = (ImageView)itemView.findViewById(R.id.callIV);
-            calltype = (ImageButton)itemView.findViewById(R.id.callButton);
+            calltype = (ImageView)itemView.findViewById(R.id.callButton);
         }
     }
 }
